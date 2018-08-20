@@ -1,0 +1,82 @@
+.body_panel {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 850px;
+    height: 50%;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+body-dock {
+    width: 100%;
+}
+
+/* UTILITY */
+.receiveMouse {
+    pointer-events: all;
+}
+
+.ignoreMouse {
+    pointer-events: none;
+}
+
+span.notification_line {
+    left: -5px;
+    top: -15px;
+    margin:0;
+    width:7px;
+    display: inline-block;
+    height:56px;
+    margin-bottom:-1px;
+    position: relative;
+    float: left;
+}
+
+span.notification_primary {
+	width: 10px;
+}
+
+span.notification_secondary {
+	width: 3px;
+}
+
+div.notification {
+    position: relative;
+    left: -800px;
+    width: 800px;
+    height: 72px;
+    min-width: 0;
+    display: block;
+    background: none;
+    border-image: url(coui://ui/main/shared/img/video/img_video_bground.png) 23 35 35 35 fill;
+    z-index: 2;
+    border-width: 23px 35px 35px 35px;
+    font-size: 150%;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-name: slidein;
+}
+
+@-webkit-keyframes 'slidein' {
+    0% {
+        left: -800px;
+    }
+
+    20% {
+        left: 0px;
+    }
+
+    80% {
+        left: 0px;
+    }
+
+    100% {
+        left: -800px;
+    }
+}

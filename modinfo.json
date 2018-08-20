@@ -1,0 +1,24 @@
+{
+    "author": "DeathByDenim",
+    "build": "110069",
+    "category": [
+        "ui"
+    ],
+    "context": "client",
+    "date": "2018-07-30",
+    "description": "Framework for notifications",
+    "display_name": "Notification Framework",
+    "forum": "https://forums.uberent.com/",
+    "identifier": "com.pa.deathbydenim.notifications",
+    "signature": "not yet implemented",
+    "version": "0.1.0",
+    "framework": true,
+    "scenes": {
+        "live_game": [
+            "coui://ui/mods/com.pa.deathbydenim.notifications/live_game.js"
+        ],
+        "live_game_chat": [
+            "coui://ui/mods/com.pa.deathbydenim.notifications/live_game_chat.js"
+        ]
+    }
+}
